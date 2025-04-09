@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*! CSS Used from: Embedded */
+      * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: inherit;
+      }
+      h2,
+      p {
+        margin: 0;
+      }
+      [data-framer-component-type] {
+        position: absolute;
+      }
+      p.framer-text,
+      h2.framer-text {
+        margin: 0;
+        padding: 0;
+      }
+      p.framer-text,
+      h2.framer-text {
+        font-family: var(
+          --framer-blockquote-font-family,
+          var(--framer-font-family, Inter, Inter Placeholder, sans-serif)
+        );
+        font-style: var(
+          --framer-blockquote-font-style,
+          var(--framer-font-style, normal)
+        );
+        font-weight: var(
+          --framer-blockquote-font-weight,
+          var(--framer-font-weight, 400)
+        );
+        color: var(
+          --framer-blockquote-text-color,
+          var(--framer-text-color, #000)
+        );
+        font-size: calc(
+          var(--framer-blockquote-font-size, var(--framer-font-size, 16px)) *
+            var(--framer-font-size-scale, 1)
+        );
+        letter-spacing: var(
+          --framer-blockquote-letter-spacing,
+          var(--framer-letter-spacing, 0)
+        );
+        text-transform: var(
+          --framer-blockquote-text-transform,
+          var(--framer-text-transform, none)
+        );
+        text-decoration: var(
+          --framer-blockquote-text-decoration,
+          var(--framer-text-decoration, none)
+        );
+        line-height: var(
+          --framer-blockquote-line-height,
+          var(--framer-line-height, 1.2em)
+        );
+        text-align: var(
+          --framer-blockquote-text-alignment,
+          var(--framer-text-alignment, start)
+        );
+        -webkit-text-stroke-width: var(--framer-text-stroke-width, initial);
+        -webkit-text-stroke-color: var(--framer-text-stroke-color, initial);
+        -moz-font-feature-settings: var(
+          --framer-font-open-type-features,
+          initial
+        );
+        -webkit-font-feature-settings: var(
+          --framer-font-open-type-features,
+          initial
+        );
+        font-feature-settings: var(--framer-font-open-type-features, initial);
+        font-variation-settings: var(--framer-font-variation-axes, normal);
+        text-wrap: var(--framer-text-wrap-override, var(--framer-text-wrap));
+      }
+      .svgContainer svg {
+        display: block;
+      }
+      .framer-4sR7i .framer-176pri {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px;
+        height: min-content;
+        justify-content: flex-start;
+        overflow: visible;
+        padding: 0;
+        position: relative;
+        width: min-content;
+      }
+      .framer-4sR7i .framer-15rhnzq {
+        --framer-paragraph-spacing: 0px;
+        flex: none;
+        height: auto;
+        position: relative;
+        white-space: pre;
+        width: auto;
+      }
+      .framer-4sR7i .framer-1rgezsu {
+        --framer-paragraph-spacing: 0px;
+        flex: none;
+        height: auto;
+        position: relative;
+        white-space: pre-wrap;
+        width: 100%;
+        word-break: break-word;
+        word-wrap: break-word;
+      }
+      .framer-4sR7i .framer-czz9qk {
+        align-content: center;
+        align-items: center;
+        background-color: var(
+          --token-f9eada81-bb7c-4779-8502-0f6609a61570,
+          #111111
+        );
+        display: flex;
+        flex: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0px;
+        height: min-content;
+        justify-content: center;
+        overflow: hidden;
+        padding: 0 40px;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+      }
+      .framer-4sR7i .framer-1kna18j {
+        align-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        flex: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0px;
+        height: min-content;
+        justify-content: center;
+        max-width: 1320px;
+        overflow: visible;
+        padding: 160px 0;
+        position: relative;
+        width: 100%;
+      }
+      .framer-4sR7i .framer-z5ayb7 {
+        align-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        flex: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 14px;
+        height: min-content;
+        justify-content: center;
+        overflow: hidden;
+        padding: 0 0 80px;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+      }
+      .framer-4sR7i .framer-bi64al {
+        aspect-ratio: 1 / 1;
+        background-color: var(
+          --token-d98a4c00-7e0c-42c7-87be-9d10760cb03b,
+          #8cff2e
+        );
+        border-radius: 100%;
+        box-shadow: 0 2px 13px #82ff1f80;
+        flex: none;
+        height: var(--framer-aspect-ratio-supported, 13px);
+        position: relative;
+        width: 13px;
+      }
+      .framer-4sR7i .framer-1lkhmbt {
+        display: grid;
+        flex: none;
+        gap: 24px;
+        grid-auto-rows: 200px;
+        grid-template-columns: repeat(3, minmax(50px, 1fr));
+        grid-template-rows: repeat(2, 200px);
+        height: min-content;
+        justify-content: center;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 100%;
+      }
+      .framer-4sR7i .framer-k7twav-container,
+      .framer-4sR7i .framer-l9rqe9-container,
+      .framer-4sR7i .framer-1mieqc3-container {
+        align-self: start;
+        flex: none;
+        height: auto;
+        justify-self: start;
+        position: relative;
+        width: 100%;
+      }
+      .framer-4sR7i .framer-1cx096z-container,
+      .framer-4sR7i .framer-f0uwvt-container {
+        align-self: start;
+        flex: none;
+        height: 100%;
+        justify-self: start;
+        position: relative;
+        width: 100%;
+      }
+      .framer-XeU5y .framer-styles-preset-jlz3n4:not(.rich-text-wrapper) {
+        --framer-font-family: "Manrope", "Manrope Placeholder", sans-serif;
+        --framer-font-family-bold: "Manrope", "Manrope Placeholder", sans-serif;
+        --framer-font-open-type-features: normal;
+        --framer-font-size: 18px;
+        --framer-font-style: normal;
+        --framer-font-style-bold: normal;
+        --framer-font-weight: 600;
+        --framer-font-weight-bold: 700;
+        --framer-letter-spacing: -0.04em;
+        --framer-line-height: 1em;
+        --framer-paragraph-spacing: 20px;
+        --framer-text-alignment: start;
+        --framer-text-color: rgba(47, 47, 47, 0.5);
+        --framer-text-decoration: none;
+        --framer-text-stroke-color: initial;
+        --framer-text-stroke-width: initial;
+        --framer-text-transform: none;
+      }
+      @media (max-width: 1199px) and (min-width: 810px) {
+        .framer-XeU5y .framer-styles-preset-jlz3n4:not(.rich-text-wrapper) {
+          --framer-font-family: "Manrope", "Manrope Placeholder", sans-serif;
+          --framer-font-family-bold: "Manrope", "Manrope Placeholder",
+            sans-serif;
+          --framer-font-open-type-features: normal;
+          --framer-font-size: 14px;
+          --framer-font-style: normal;
+          --framer-font-style-bold: normal;
+          --framer-font-weight: 600;
+          --framer-font-weight-bold: 700;
+          --framer-letter-spacing: -0.04em;
+          --framer-line-height: 1em;
+          --framer-paragraph-spacing: 20px;
+          --framer-text-alignment: start;
+          --framer-text-color: rgba(47, 47, 47, 0.5);
+          --framer-text-decoration: none;
+          --framer-text-stroke-color: initial;
+          --framer-text-stroke-width: initial;
+          --framer-text-transform: none;
+        }
+      }
+      @media (max-width: 809px) and (min-width: 0px) {
+        .framer-XeU5y .framer-styles-preset-jlz3n4:not(.rich-text-wrapper) {
+          --framer-font-family: "Manrope", "Manrope Placeholder", sans-serif;
+          --framer-font-family-bold: "Manrope", "Manrope Placeholder",
+            sans-serif;
+          --framer-font-open-type-features: normal;
+          --framer-font-size: 13px;
+          --framer-font-style: normal;
+          --framer-font-style-bold: normal;
+          --framer-font-weight: 600;
+          --framer-font-weight-bold: 700;
+          --framer-letter-spacing: -0.04em;
+          --framer-line-height: 1em;
+          --framer-paragraph-spacing: 20px;
+          --framer-text-alignment: start;
+          --framer-text-color: rgba(47, 47, 47, 0.5);
+          --framer-text-decoration: none;
+          --framer-text-stroke-color: initial;
+          --framer-text-stroke-width: initial;
+          --framer-text-transform: none;
+        }
+      }
+      .framer-H62JH .framer-styles-preset-1022wn1:not(.rich-text-wrapper) {
+        --framer-font-family: "Manrope", "Manrope Placeholder", sans-serif;
+        --framer-font-family-bold: "Manrope", "Manrope Placeholder", sans-serif;
+        --framer-font-open-type-features: normal;
+        --framer-font-size: 90px;
+        --framer-font-style: normal;
+        --framer-font-style-bold: normal;
+        --framer-font-weight: 400;
+        --framer-font-weight-bold: 700;
+        --framer-letter-spacing: -0.04em;
+        --framer-line-height: 1.1em;
+        --framer-paragraph-spacing: 40px;
+        --framer-text-alignment: start;
+        --framer-text-color: var(
+          --token-8303387e-d4c2-4989-af33-54d2c870c7ac,
+          #2f2f2f
+        );
+        --framer-text-decoration: none;
+        --framer-text-stroke-color: initial;
+        --framer-text-stroke-width: initial;
+        --framer-text-transform: none;
+        --framer-text-wrap: balance;
+      }
+      @media (max-width: 1199px) and (min-width: 810px) {
+        .framer-H62JH .framer-styles-preset-1022wn1:not(.rich-text-wrapper) {
+          --framer-font-family: "Manrope", "Manrope Placeholder", sans-serif;
+          --framer-font-family-bold: "Manrope", "Manrope Placeholder",
+            sans-serif;
+          --framer-font-open-type-features: normal;
+          --framer-font-size: 50px;
+          --framer-font-style: normal;
+          --framer-font-style-bold: normal;
+          --framer-font-weight: 400;
+          --framer-font-weight-bold: 700;
+          --framer-letter-spacing: -0.04em;
+          --framer-line-height: 1.1em;
+          --framer-paragraph-spacing: 40px;
+          --framer-text-alignment: start;
+          --framer-text-color: var(
+            --token-8303387e-d4c2-4989-af33-54d2c870c7ac,
+            #2f2f2f
+          );
+          --framer-text-decoration: none;
+          --framer-text-stroke-color: initial;
+          --framer-text-stroke-width: initial;
+          --framer-text-transform: none;
+          --framer-text-wrap: balance;
+        }
+      }
+      @media (max-width: 809px) and (min-width: 0px) {
+        .framer-H62JH .framer-styles-preset-1022wn1:not(.rich-text-wrapper) {
+          --framer-font-family: "Manrope", "Manrope Placeholder", sans-serif;
+          --framer-font-family-bold: "Manrope", "Manrope Placeholder",
+            sans-serif;
+          --framer-font-open-type-features: normal;
+          --framer-font-size: 40px;
+          --framer-font-style: normal;
+          --framer-font-style-bold: normal;
+          --framer-font-weight: 400;
+          --framer-font-weight-bold: 700;
+          --framer-letter-spacing: -0.04em;
+          --framer-line-height: 1.1em;
+          --framer-paragraph-spacing: 40px;
+          --framer-text-alignment: start;
+          --framer-text-color: var(
+            --token-8303387e-d4c2-4989-af33-54d2c870c7ac,
+            #2f2f2f
+          );
+          --framer-text-decoration: none;
+          --framer-text-stroke-color: initial;
+          --framer-text-stroke-width: initial;
+          --framer-text-transform: none;
+          --framer-text-wrap: balance;
+        }
+      }
+      @media (min-width: 810px) and (max-width: 1199px) {
+        .framer-4sR7i .framer-czz9qk {
+          padding: 0 32px;
+        }
+        .framer-4sR7i .framer-1kna18j {
+          padding: 80px 0;
+        }
+        .framer-4sR7i .framer-z5ayb7 {
+          padding: 0 0 40px;
+        }
+        .framer-4sR7i .framer-1lkhmbt {
+          grid-template-columns: repeat(2, minmax(50px, 1fr));
+        }
+        .framer-4sR7i .framer-1mieqc3-container {
+          height: 100%;
+        }
+        .framer-4sR7i .framer-f0uwvt-container {
+          grid-column: auto / span 2;
+        }
+      }
+      @media (max-width: 809px) {
+        .framer-4sR7i .framer-bi64al {
+          height: var(--framer-aspect-ratio-supported, 10px);
+          width: 10px;
+        }
+        .framer-4sR7i .framer-z5ayb7 {
+          padding: 0 0 40px;
+        }
+        .framer-4sR7i .framer-czz9qk {
+          order: 6;
+          padding: 0 24px;
+        }
+        .framer-4sR7i .framer-1kna18j {
+          padding: 60px 0 50px;
+        }
+        .framer-4sR7i .framer-1lkhmbt {
+          align-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          gap: 18px;
+        }
+        .framer-4sR7i .framer-k7twav-container,
+        .framer-4sR7i .framer-l9rqe9-container,
+        .framer-4sR7i .framer-1mieqc3-container {
+          align-self: unset;
+        }
+        .framer-4sR7i .framer-1cx096z-container,
+        .framer-4sR7i .framer-f0uwvt-container {
+          align-self: unset;
+          height: auto;
+        }
+      }
+      .framer-82MfK.framer-x6ubcu {
+        display: block;
+      }
+      .framer-82MfK.framer-1v91plg {
+        align-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 50px;
+        height: min-content;
+        justify-content: center;
+        padding: 40px 30px 30px 40px;
+        position: relative;
+        text-decoration: none;
+        width: 424px;
+      }
+      .framer-82MfK .framer-1gjx862 {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        height: min-content;
+        justify-content: flex-start;
+        overflow: visible;
+        padding: 0;
+        position: relative;
+        width: 100%;
+      }
+      .framer-82MfK .framer-d4bkti {
+        flex: none;
+        height: auto;
+        position: relative;
+        white-space: pre;
+        width: auto;
+      }
+      .framer-82MfK .framer-1gc2nad {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        height: min-content;
+        justify-content: flex-end;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 100%;
+      }
+      .framer-82MfK .framer-k8rkxl-container {
+        flex: none;
+        height: 52px;
+        position: relative;
+        width: 52px;
+      }
+      .framer-D8XiS.framer-5trg2w {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        height: 52px;
+        justify-content: center;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 52px;
+        will-change: var(--framer-will-change-override, transform);
+      }
+      .framer-D8XiS .framer-11kwoku {
+        aspect-ratio: 1 / 1;
+        flex: none;
+        height: var(--framer-aspect-ratio-supported, 24px);
+        overflow: visible;
+        position: relative;
+        width: 24px;
+      }
+      .framer-9dk5H.framer-4xrn3c {
+        display: block;
+      }
+      .framer-9dk5H.framer-vf4ro3 {
+        align-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 200px;
+        justify-content: space-between;
+        padding: 40px 30px 30px 40px;
+        position: relative;
+        text-decoration: none;
+        width: 424px;
+      }
+      .framer-9dk5H .framer-v1zqwg {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        height: min-content;
+        justify-content: flex-start;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 100%;
+      }
+      .framer-9dk5H .framer-ud8uhk {
+        flex: none;
+        height: auto;
+        position: relative;
+        white-space: pre;
+        width: auto;
+      }
+      .framer-9dk5H .framer-1i0pvnv {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        height: min-content;
+        justify-content: flex-end;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 100%;
+      }
+      .framer-9dk5H .framer-50tz6h {
+        align-content: center;
+        align-items: center;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        flex: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        height: var(--framer-aspect-ratio-supported, 24px);
+        justify-content: center;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 24px;
+      }
+      .framer-9dk5H .framer-15iabwm {
+        flex: none;
+        height: 24px;
+        position: relative;
+        width: 24px;
+        z-index: 1;
+      }
+      .framer-Rv6qS .framer-styles-preset-1fg8wyq:not(.rich-text-wrapper) {
+        --framer-font-family: "Manrope", "Manrope Placeholder", sans-serif;
+        --framer-font-family-bold: "Manrope", "Manrope Placeholder", sans-serif;
+        --framer-font-open-type-features: normal;
+        --framer-font-size: 20px;
+        --framer-font-style: normal;
+        --framer-font-style-bold: normal;
+        --framer-font-weight: 600;
+        --framer-font-weight-bold: 700;
+        --framer-letter-spacing: -0.04em;
+        --framer-line-height: 1.4em;
+        --framer-paragraph-spacing: 20px;
+        --framer-text-alignment: start;
+        --framer-text-color: var(
+          --token-8303387e-d4c2-4989-af33-54d2c870c7ac,
+          #2f2f2f
+        );
+        --framer-text-decoration: none;
+        --framer-text-stroke-color: initial;
+        --framer-text-stroke-width: initial;
+        --framer-text-transform: none;
+      }
+      @media (max-width: 1199px) and (min-width: 810px) {
+        .framer-Rv6qS .framer-styles-preset-1fg8wyq:not(.rich-text-wrapper) {
+          --framer-font-family: "Manrope", "Manrope Placeholder", sans-serif;
+          --framer-font-family-bold: "Manrope", "Manrope Placeholder",
+            sans-serif;
+          --framer-font-open-type-features: normal;
+          --framer-font-size: 18px;
+          --framer-font-style: normal;
+          --framer-font-style-bold: normal;
+          --framer-font-weight: 600;
+          --framer-font-weight-bold: 700;
+          --framer-letter-spacing: -0.04em;
+          --framer-line-height: 1.4em;
+          --framer-paragraph-spacing: 20px;
+          --framer-text-alignment: start;
+          --framer-text-color: var(
+            --token-8303387e-d4c2-4989-af33-54d2c870c7ac,
+            #2f2f2f
+          );
+          --framer-text-decoration: none;
+          --framer-text-stroke-color: initial;
+          --framer-text-stroke-width: initial;
+          --framer-text-transform: none;
+        }
+      }
+      @media (max-width: 809px) and (min-width: 0px) {
+        .framer-Rv6qS .framer-styles-preset-1fg8wyq:not(.rich-text-wrapper) {
+          --framer-font-family: "Manrope", "Manrope Placeholder", sans-serif;
+          --framer-font-family-bold: "Manrope", "Manrope Placeholder",
+            sans-serif;
+          --framer-font-open-type-features: normal;
+          --framer-font-size: 16px;
+          --framer-font-style: normal;
+          --framer-font-style-bold: normal;
+          --framer-font-weight: 600;
+          --framer-font-weight-bold: 700;
+          --framer-letter-spacing: -0.04em;
+          --framer-line-height: 1.4em;
+          --framer-paragraph-spacing: 20px;
+          --framer-text-alignment: start;
+          --framer-text-color: var(
+            --token-8303387e-d4c2-4989-af33-54d2c870c7ac,
+            #2f2f2f
+          );
+          --framer-text-decoration: none;
+          --framer-text-stroke-color: initial;
+          --framer-text-stroke-width: initial;
+          --framer-text-transform: none;
+        }
+      }
+      .ssr-variant {
+        display: contents;
+      }
+      /*! CSS Used from: Embedded */
+      [data-framer-component-type] {
+        position: absolute;
+      }
+      p.framer-text,
+      h2.framer-text {
+        margin: 0px;
+        padding: 0px;
+      }
+      p.framer-text,
+      h2.framer-text {
+        font-family: var(
+          --framer-blockquote-font-family,
+          var(--framer-font-family, Inter, Inter Placeholder, sans-serif)
+        );
+        font-style: var(
+          --framer-blockquote-font-style,
+          var(--framer-font-style, normal)
+        );
+        font-weight: var(
+          --framer-blockquote-font-weight,
+          var(--framer-font-weight, 400)
+        );
+        color: var(
+          --framer-blockquote-text-color,
+          var(--framer-text-color, #000)
+        );
+        font-size: calc(
+          var(--framer-blockquote-font-size, var(--framer-font-size, 16px)) *
+            var(--framer-font-size-scale, 1)
+        );
+        letter-spacing: var(
+          --framer-blockquote-letter-spacing,
+          var(--framer-letter-spacing, 0)
+        );
+        text-transform: var(
+          --framer-blockquote-text-transform,
+          var(--framer-text-transform, none)
+        );
+        text-decoration: var(
+          --framer-blockquote-text-decoration,
+          var(--framer-text-decoration, none)
+        );
+        line-height: var(
+          --framer-blockquote-line-height,
+          var(--framer-line-height, 1.2em)
+        );
+        text-align: var(
+          --framer-blockquote-text-alignment,
+          var(--framer-text-alignment, start)
+        );
+        -webkit-text-stroke-width: var(--framer-text-stroke-width, initial);
+        -webkit-text-stroke-color: var(--framer-text-stroke-color, initial);
+        font-feature-settings: var(--framer-font-open-type-features, initial);
+        font-variation-settings: var(--framer-font-variation-axes, normal);
+        text-wrap: var(--framer-text-wrap-override, var(--framer-text-wrap));
+      }
+      .svgContainer svg {
+        display: block;
+      }
+      /*! CSS Used fontfaces */
+      @font-face {
+        font-family: Inter;
+        src: url(https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2);
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: Inter;
+        src: url(https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2);
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: Inter;
+        src: url(https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2);
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        unicode-range: U+1F00-1FFF;
+      }
+      @font-face {
+        font-family: Inter;
+        src: url(https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2);
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        unicode-range: U+0370-03FF;
+      }
+      @font-face {
+        font-family: Inter;
+        src: url(https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2);
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: Inter;
+        src: url(https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2);
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: Inter;
+        src: url(https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2);
+        font-display: swap;
+        font-style: normal;
+        font-weight: 400;
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: Inter Placeholder;
+        src: local("Arial");
+        ascent-override: 89.79%;
+        descent-override: 22.36%;
+        line-gap-override: 0%;
+        size-adjust: 107.89%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="framer-czz9qk" data-framer-name="Contacts">
+      <div class="framer-1kna18j" data-framer-name="container">
+        <div
+          class="framer-z5ayb7"
+          data-framer-name="heading"
+          style="will-change: transform; opacity: 1; transform: none"
+        >
+          <div class="framer-176pri" data-framer-name="pre-heading">
+            <div class="framer-bi64al" data-framer-name="Ellipse 2"></div>
+            <div
+              class="framer-15rhnzq"
+              data-framer-name="Available for freelance"
+              style="
+                outline: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex-shrink: 0;
+                transform: none;
+              "
+              data-framer-component-type="RichTextContainer"
+            >
+              <p
+                class="framer-text framer-styles-preset-jlz3n4"
+                data-styles-preset="ZB77kTEoK"
+                style="--framer-text-color: rgba(255, 255, 255, 0.5)"
+              >
+                {04} —&nbsp;Catch me
+              </p>
+            </div>
+          </div>
+          <div class="ssr-variant hidden-12dc1ih">
+            <div
+              class="framer-1rgezsu"
+              data-framer-component-type="RichTextContainer"
+              style="
+                outline: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex-shrink: 0;
+                transform: none;
+              "
+            >
+              <h2
+                class="framer-text framer-styles-preset-1022wn1"
+                data-styles-preset="uIKGGz_DG"
+                style="
+                  --framer-text-color: var(
+                    --token-31ac618e-2676-4a39-9320-7a3775f1f04b,
+                    rgb(255, 255, 255)
+                  );
+                "
+              >
+                Dominating socials
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="framer-1lkhmbt">
+          <div class="ssr-variant hidden-t5bde7 hidden-12dc1ih">
+            <div class="framer-k7twav-container">
+              <a
+                class="framer-82MfK framer-Rv6qS framer-1v91plg framer-v-1v91plg framer-x6ubcu"
+                data-framer-name="Desktop"
+                href="https://x.com/ArtusAI_"
+                target="_blank"
+                rel="noopener"
+                style="
+                  background-color: var(
+                    --token-39c60080-ee6b-4f5d-baab-dce7543cdb11,
+                    rgb(66, 66, 66)
+                  );
+                  width: 100%;
+                  border-radius: 14px;
+                  opacity: 1;
+                "
+                ><div
+                  class="framer-1gjx862"
+                  data-framer-name="text"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="framer-d4bkti"
+                    data-framer-name="Twitter/X"
+                    data-framer-component-type="RichTextContainer"
+                    style="
+                      outline: none;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      flex-shrink: 0;
+                      --extracted-r6o4lv: var(
+                        --token-31ac618e-2676-4a39-9320-7a3775f1f04b,
+                        rgb(255, 255, 255)
+                      );
+                      --framer-paragraph-spacing: 0px;
+                      transform: none;
+                      opacity: 1;
+                    "
+                  >
+                    <p
+                      class="framer-text framer-styles-preset-1fg8wyq"
+                      data-styles-preset="MS67AoHSQ"
+                      style="
+                        --framer-text-color: var(
+                          --extracted-r6o4lv,
+                          var(
+                            --token-31ac618e-2676-4a39-9320-7a3775f1f04b,
+                            rgb(255, 255, 255)
+                          )
+                        );
+                      "
+                    >
+                      Twitter/X
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="framer-1gc2nad"
+                  data-framer-name="icon"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="framer-k8rkxl-container"
+                    style="transform: none; opacity: 1"
+                  >
+                    <div
+                      class="framer-D8XiS framer-5trg2w framer-v-5trg2w"
+                      data-framer-name="X"
+                      style="
+                        background-color: var(
+                          --token-d98a4c00-7e0c-42c7-87be-9d10760cb03b,
+                          rgb(130, 255, 31)
+                        );
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 26px;
+                        opacity: 1;
+                      "
+                    >
+                      <div class="framer-11kwoku" style="opacity: 0.7">
+                        <div
+                          data-framer-background-image-wrapper="true"
+                          style="
+                            position: absolute;
+                            border-radius: inherit;
+                            inset: 0px;
+                          "
+                        >
+                          <img
+                            decoding="async"
+                            loading="lazy"
+                            sizes="24px"
+                            src="https://framerusercontent.com/images/kPRcnz2O0uWBZIRMtm2TrI560.svg"
+                            alt=""
+                            style="
+                              display: block;
+                              width: 100%;
+                              height: 100%;
+                              border-radius: inherit;
+                              object-position: center center;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </div>
+          </div>
+          <div class="ssr-variant hidden-t5bde7 hidden-12dc1ih">
+            <div class="framer-l9rqe9-container">
+              <a
+                class="framer-82MfK framer-Rv6qS framer-1v91plg framer-v-1v91plg framer-x6ubcu"
+                href="https://instagram.com/ArtusAI_"
+                target="_blank"
+                rel="noopener"
+                style="
+                  background-color: var(
+                    --token-39c60080-ee6b-4f5d-baab-dce7543cdb11,
+                    rgb(66, 66, 66)
+                  );
+                  width: 100%;
+                  border-radius: 14px;
+                  opacity: 1;
+                "
+                data-framer-name="Desktop"
+                ><div
+                  class="framer-1gjx862"
+                  data-framer-name="text"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="framer-d4bkti"
+                    data-framer-name="Twitter/X"
+                    data-framer-component-type="RichTextContainer"
+                    style="
+                      outline: none;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      flex-shrink: 0;
+                      --extracted-r6o4lv: var(
+                        --token-31ac618e-2676-4a39-9320-7a3775f1f04b,
+                        rgb(255, 255, 255)
+                      );
+                      --framer-paragraph-spacing: 0px;
+                      transform: none;
+                      opacity: 1;
+                    "
+                  >
+                    <p
+                      class="framer-text framer-styles-preset-1fg8wyq"
+                      data-styles-preset="MS67AoHSQ"
+                      style="
+                        --framer-text-color: var(
+                          --extracted-r6o4lv,
+                          var(
+                            --token-31ac618e-2676-4a39-9320-7a3775f1f04b,
+                            rgb(255, 255, 255)
+                          )
+                        );
+                      "
+                    >
+                      Instagram
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="framer-1gc2nad"
+                  data-framer-name="icon"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="framer-k8rkxl-container"
+                    style="transform: none; opacity: 1; will-change: transform"
+                  >
+                    <div
+                      class="framer-D8XiS framer-5trg2w framer-v-5trg2w"
+                      data-framer-name="X"
+                      style="
+                        background-color: var(
+                          --token-d98a4c00-7e0c-42c7-87be-9d10760cb03b,
+                          rgb(130, 255, 31)
+                        );
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 26px;
+                        opacity: 1;
+                      "
+                    >
+                      <div class="framer-11kwoku" style="opacity: 0.7">
+                        <div
+                          data-framer-background-image-wrapper="true"
+                          style="
+                            position: absolute;
+                            border-radius: inherit;
+                            inset: 0px;
+                          "
+                        >
+                          <img
+                            decoding="async"
+                            loading="lazy"
+                            sizes="24px"
+                            src="https://framerusercontent.com/images/vGENnRvcoJNCm6OpsY973un0QA.svg"
+                            alt=""
+                            style="
+                              display: block;
+                              width: 100%;
+                              height: 100%;
+                              border-radius: inherit;
+                              object-position: center center;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </div>
+          </div>
+          <div class="ssr-variant hidden-t5bde7 hidden-12dc1ih">
+            <div class="framer-1mieqc3-container">
+              <a
+                class="framer-82MfK framer-Rv6qS framer-1v91plg framer-v-1v91plg framer-x6ubcu"
+                data-framer-name="Desktop"
+                href="https://tiktok.com/artus.ai"
+                target="_blank"
+                rel="noopener"
+                style="
+                  background-color: var(
+                    --token-39c60080-ee6b-4f5d-baab-dce7543cdb11,
+                    rgb(66, 66, 66)
+                  );
+                  width: 100%;
+                  border-radius: 14px;
+                  opacity: 1;
+                "
+                ><div
+                  class="framer-1gjx862"
+                  data-framer-name="text"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="framer-d4bkti"
+                    data-framer-name="Twitter/X"
+                    data-framer-component-type="RichTextContainer"
+                    style="
+                      outline: none;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      flex-shrink: 0;
+                      --extracted-r6o4lv: var(
+                        --token-31ac618e-2676-4a39-9320-7a3775f1f04b,
+                        rgb(255, 255, 255)
+                      );
+                      --framer-paragraph-spacing: 0px;
+                      transform: none;
+                      opacity: 1;
+                    "
+                  >
+                    <p
+                      class="framer-text framer-styles-preset-1fg8wyq"
+                      data-styles-preset="MS67AoHSQ"
+                      style="
+                        --framer-text-color: var(
+                          --extracted-r6o4lv,
+                          var(
+                            --token-31ac618e-2676-4a39-9320-7a3775f1f04b,
+                            rgb(255, 255, 255)
+                          )
+                        );
+                      "
+                    >
+                      TikTok
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="framer-1gc2nad"
+                  data-framer-name="icon"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="framer-k8rkxl-container"
+                    style="transform: none; opacity: 1"
+                  >
+                    <div
+                      class="framer-D8XiS framer-5trg2w framer-v-5trg2w"
+                      data-framer-name="X"
+                      style="
+                        background-color: var(
+                          --token-d98a4c00-7e0c-42c7-87be-9d10760cb03b,
+                          rgb(130, 255, 31)
+                        );
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 26px;
+                        opacity: 1;
+                      "
+                    >
+                      <div class="framer-11kwoku" style="opacity: 0.7">
+                        <div
+                          data-framer-background-image-wrapper="true"
+                          style="
+                            position: absolute;
+                            border-radius: inherit;
+                            inset: 0px;
+                          "
+                        >
+                          <img
+                            decoding="async"
+                            loading="lazy"
+                            sizes="24px"
+                            src="https://framerusercontent.com/images/JHLJ9JOBefCDTS9cIzYPTDB0YhY.svg"
+                            alt=""
+                            style="
+                              display: block;
+                              width: 100%;
+                              height: 100%;
+                              border-radius: inherit;
+                              object-position: center center;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </div>
+          </div>
+          <div class="ssr-variant hidden-t5bde7 hidden-12dc1ih">
+            <div class="framer-1cx096z-container">
+              <a
+                class="framer-82MfK framer-Rv6qS framer-1v91plg framer-v-1v91plg framer-x6ubcu"
+                data-framer-name="Desktop"
+                href="https://www.youtube.com/@ArtusAI-2025"
+                target="_blank"
+                rel="noopener"
+                style="
+                  background-color: var(
+                    --token-39c60080-ee6b-4f5d-baab-dce7543cdb11,
+                    rgb(66, 66, 66)
+                  );
+                  height: 100%;
+                  width: 100%;
+                  border-radius: 14px;
+                  opacity: 1;
+                "
+                ><div
+                  class="framer-1gjx862"
+                  data-framer-name="text"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="framer-d4bkti"
+                    data-framer-name="Twitter/X"
+                    data-framer-component-type="RichTextContainer"
+                    style="
+                      outline: none;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      flex-shrink: 0;
+                      --extracted-r6o4lv: var(
+                        --token-31ac618e-2676-4a39-9320-7a3775f1f04b,
+                        rgb(255, 255, 255)
+                      );
+                      --framer-paragraph-spacing: 0px;
+                      transform: none;
+                      opacity: 1;
+                    "
+                  >
+                    <p
+                      class="framer-text framer-styles-preset-1fg8wyq"
+                      data-styles-preset="MS67AoHSQ"
+                      style="
+                        --framer-text-color: var(
+                          --extracted-r6o4lv,
+                          var(
+                            --token-31ac618e-2676-4a39-9320-7a3775f1f04b,
+                            rgb(255, 255, 255)
+                          )
+                        );
+                      "
+                    >
+                      YouTube
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="framer-1gc2nad"
+                  data-framer-name="icon"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="framer-k8rkxl-container"
+                    style="transform: none; opacity: 1"
+                  >
+                    <div
+                      class="framer-D8XiS framer-5trg2w framer-v-5trg2w"
+                      data-framer-name="X"
+                      style="
+                        background-color: var(
+                          --token-d98a4c00-7e0c-42c7-87be-9d10760cb03b,
+                          rgb(130, 255, 31)
+                        );
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 26px;
+                        opacity: 1;
+                      "
+                    >
+                      <div class="framer-11kwoku" style="opacity: 0.7">
+                        <div
+                          data-framer-background-image-wrapper="true"
+                          style="
+                            position: absolute;
+                            border-radius: inherit;
+                            inset: 0px;
+                          "
+                        >
+                          <img
+                            decoding="async"
+                            loading="lazy"
+                            sizes="24px"
+                            src="https://framerusercontent.com/images/FeunDaWI0Ikwx3ZAFFFCj7qi500.svg"
+                            alt=""
+                            style="
+                              display: block;
+                              width: 100%;
+                              height: 100%;
+                              border-radius: inherit;
+                              object-position: center center;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </div>
+          </div>
+          <div class="ssr-variant hidden-t5bde7 hidden-12dc1ih">
+            <div class="framer-f0uwvt-container">
+              <a
+                class="framer-9dk5H framer-Rv6qS framer-vf4ro3 framer-v-vf4ro3 framer-4xrn3c"
+                href="https://t.me/ArtusAI"
+                rel="noopener"
+                style="
+                  background-color: var(
+                    --token-d98a4c00-7e0c-42c7-87be-9d10760cb03b,
+                    rgb(130, 255, 31)
+                  );
+                  height: 100%;
+                  width: 100%;
+                  border-radius: 14px;
+                  opacity: 1;
+                "
+                data-framer-name="Desktop"
+                ><div
+                  class="framer-v1zqwg"
+                  data-framer-name="text"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="framer-ud8uhk"
+                    data-framer-name="Twitter/X"
+                    data-framer-component-type="RichTextContainer"
+                    style="
+                      outline: none;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      flex-shrink: 0;
+                      --framer-paragraph-spacing: 0px;
+                      transform: none;
+                      transform-origin: 50% 50% 0px;
+                      opacity: 1;
+                    "
+                  >
+                    <p
+                      class="framer-text framer-styles-preset-1fg8wyq"
+                      data-styles-preset="MS67AoHSQ"
+                    >
+                      Join us on Telegram!
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="framer-1i0pvnv"
+                  data-framer-name="icon"
+                  style="
+                    transform: none;
+                    transform-origin: 50% 50% 0px;
+                    opacity: 1;
+                  "
+                >
+                  <div
+                    class="framer-50tz6h"
+                    style="
+                      transform: none;
+                      transform-origin: 50% 50% 0px;
+                      opacity: 1;
+                    "
+                  >
+                    <div
+                      data-framer-component-type="SVG"
+                      data-framer-name="Vector"
+                      class="framer-15iabwm"
+                      aria-hidden="true"
+                      style="
+                        image-rendering: pixelated;
+                        flex-shrink: 0;
+                        fill: rgb(0, 0, 0);
+                        color: rgb(0, 0, 0);
+                        transform: none;
+                        transform-origin: 50% 50% 0px;
+                      "
+                    >
+                      <div
+                        class="svgContainer"
+                        style="width: 100%; height: 100%; aspect-ratio: inherit"
+                      >
+                        <svg
+                          style="width: 100%; height: 100%"
+                          viewBox="0 0 24 26"
+                          preserveAspectRatio="none"
+                          width="100%"
+                          height="100%"
+                        >
+                          <use href="#svg2106073754_732"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,9 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 const Test5 = () => {
-
   return (
     <div
       id="About"
@@ -51,16 +51,18 @@ const Test5 = () => {
 
           {/* About Section */}
           <div className="flex flex-col space-y-2 bg-[#121212] rounded-2xl p-4">
-            <p className="font-medium">About</p>
+            <Link href="/about" className="hover:text-white cursor-pointer">
+              <p className="font-medium">About</p>
+            </Link>
             <p className="hover:text-white cursor-pointer">Our mission</p>
-            <p className="hover:text-white cursor-pointer">Privacy Policy</p>
-            <p className="hover:text-white cursor-pointer">Terms of service</p>
+            {/* <p className="hover:text-white cursor-pointer">Privacy Policy</p> */}
+            {/* <p className="hover:text-white cursor-pointer">Terms of service</p> */}
           </div>
 
           {/* Services Section */}
           <div className="flex flex-col space-y-2 bg-[#121212] rounded-2xl p-4">
-            <p className="font-medium">Services</p>
-            <p className="hover:text-white cursor-pointer">Products</p>
+            {/* <p className="font-medium">Services</p> */}
+            {/* <p className="hover:text-white cursor-pointer">Products</p> */}
             <p className="hover:text-white cursor-pointer">Join our team</p>
             <p className="hover:text-white cursor-pointer">Partner with us</p>
           </div>

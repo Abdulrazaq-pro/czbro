@@ -1,23 +1,27 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import HomePage from "./pages/HomePage";
-import Test from "./test/page";
+import Hero from "./hero/page";
 import Test2 from "./test2/page";
 import Test3 from "./test3/page";
-import Test4 from "./test4/page";
+import ContactAddress from "./contactaddress/page";
 import Test5 from "./test5/page";
-import Test6 from "./page6/page";
+import About from "./about/page";
+import RoadmapPage from "./roadmap/page";
+import SocialGrid from "./socials/page";
 
 export default function Home() {
   return (
     <main className="bg-black">
       {/* <HomePage /> */}
-      <Test/>
-      <Test2/>
-      <Test4/>
+      <Hero />
+      {/* <Test2/> */}
       {/* <Test3/> */}
-      <Test6/>
-      <Test5/>
+      <About />
+      <ContactAddress />
+      <RoadmapPage />
+      <SocialGrid />
+      <Test5 />
     </main>
   );
 }

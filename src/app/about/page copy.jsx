@@ -1,18 +1,18 @@
 import React from "react";
 import { GlobeIcon, SparklesIcon, CubeIcon } from "lucide-react";
 
-const Test6 = () => {
+const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br p-8">
+    <div className=" bg-gradient-to-br p-8">
       <div className="max-w-6xl mx-auto">
         {/* Glass card effect */}
         <div className="backdrop-blur-lg bg-white/10 rounded-3xl p-8 shadow-2xl">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600 mb-4">
+            <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-600 mb-4">
               About Us
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto rounded-full" />
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full" />
           </div>
 
           {/* Main content */}
@@ -55,7 +55,7 @@ const Test6 = () => {
                   key={index}
                   className="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300"
                 >
-                  <div className="text-yellow-600">{feature.icon}</div>
+                  <div className="text-amber-600">{feature.icon}</div>
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">
                       {feature.title}
@@ -72,4 +72,4 @@ const Test6 = () => {
   );
 };
 
-export default Test6;
+export default About;

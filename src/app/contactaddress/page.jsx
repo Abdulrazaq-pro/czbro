@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { ClipboardCheck, Copy, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Test4 = () => {
+const ContactAddress = () => {
   const [copied, setCopied] = useState(false);
   const [truncatedAddress, setTruncatedAddress] = useState("");
   const address = "0xe2bb9655bba8c50370207a03e46b9e952cbcd17a";
@@ -39,7 +39,7 @@ const Test4 = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="flex items-center gap-3 text-yellow-300 text-3xl md:text-6xl font-bold"
+            className="flex items-center gap-3 text-amber-300 text-3xl md:text-6xl font-bold"
           >
             <Sparkles className="w-8 h-8 md:w-12 md:h-12" />
             $CZBRO Token Address
@@ -52,9 +52,9 @@ const Test4 = () => {
             transition={{ delay: 0.4 }}
           >
             <div className="flex flex-col md:flex-row gap-4 items-center">
-              <div className="w-full md:flex-1 p-4 bg-yellow-500/5 backdrop-blur-xl rounded-xl border border-yellow-500/20 shadow-xl hover:shadow-yellow-500/10 transition-all duration-300">
+              <div className="w-full md:flex-1 p-4 bg-amber-500/5 backdrop-blur-xl rounded-xl border border-amber-500/20 shadow-xl hover:shadow-amber-500/10 transition-all duration-300">
                 <div className="flex items-center gap-2 md:gap-4">
-                  <span className="px-2 py-1 text-xs md:text-sm font-medium text-yellow-300 bg-yellow-400/10 rounded-md">
+                  <span className="px-2 py-1 text-xs md:text-sm font-medium text-amber-300 bg-amber-400/10 rounded-md">
                     CA
                   </span>
                   <code className="flex-1 font-mono text-xs md:text-base text-gray-200 overflow-hidden whitespace-nowrap">
@@ -63,7 +63,7 @@ const Test4 = () => {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="flex items-center gap-1 md:gap-2 px-2 md:px-4 py-2 text-xs md:text-sm font-medium text-black bg-yellow-400 rounded-lg hover:bg-yellow-300 transition-colors whitespace-nowrap shadow-lg hover:shadow-yellow-400/50"
+                    className="flex items-center gap-1 md:gap-2 px-2 md:px-4 py-2 text-xs md:text-sm font-medium text-black bg-amber-400 rounded-lg hover:bg-amber-300 transition-colors whitespace-nowrap shadow-lg hover:shadow-amber-400/50"
                     onClick={handleCopy}
                   >
                     <AnimatePresence mode="wait">
@@ -96,7 +96,7 @@ const Test4 = () => {
               </div>
               <motion.a
                 href="https://dexscreener.com/bsc/0x2fA03d0deAFBe824A3aeBA5944EF421eD18050aC"
-                className="px-6 py-3 text-sm md:text-base font-semibold text-black bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-xl hover:from-yellow-300 hover:to-yellow-200 transition-all shadow-lg hover:shadow-yellow-400/25"
+                className="px-6 py-3 text-sm md:text-base font-semibold text-black bg-gradient-to-r from-amber-400 to-amber-300 rounded-xl hover:from-amber-300 hover:to-amber-200 transition-all shadow-lg hover:shadow-amber-400/25"
                 whileHover={{ scale: 1.02, rotate: 1 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -112,13 +112,13 @@ const Test4 = () => {
             transition={{ delay: 0.6 }}
           >
             <span className="text-sm md:text-base">Buy Easily with</span>
-            <div className="flex items-center gap-2 px-4 py-2 bg-yellow-500/5 rounded-xl backdrop-blur-sm border border-yellow-500/20 hover:bg-yellow-500/10 transition-all duration-300">
+            <div className="flex items-center gap-2 px-4 py-2 bg-amber-500/5 rounded-xl backdrop-blur-sm border border-amber-500/20 hover:bg-amber-500/10 transition-all duration-300">
               <img
                 className="w-6 h-6 rounded-lg"
                 src="/logo.png"
                 alt="czbnb logo"
               />
-              <span className="font-bold text-yellow-300">CZBNB</span>
+              <span className="font-bold text-amber-300">CZBNB</span>
             </div>
           </motion.div> */}
         </motion.div>
@@ -127,4 +127,4 @@ const Test4 = () => {
   );
 };
 
-export default Test4;
+export default ContactAddress;
